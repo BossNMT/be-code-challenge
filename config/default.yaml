@@ -2,7 +2,7 @@ node_env: development
 cron: true
 
 server:
-  port: 8003
+  port: 2212
   host: 0.0.0.0
   url: https://codechallenge.com/
   web_url: https://codechallenge.com/
