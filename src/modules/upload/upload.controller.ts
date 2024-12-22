@@ -17,7 +17,6 @@ import { AuthUser } from "common/decorators/http.decorators";
 export class UploadController {
   constructor(private readonly uploadService: UploadService) {}
 
-  @AuthUser()
   @Post("image")
   @ApiOperation({ summary: "Upload image" })
   @UseInterceptors(
