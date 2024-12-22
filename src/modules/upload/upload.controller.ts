@@ -32,7 +32,7 @@ export class UploadController {
         },
       }),
       limits: {
-        fileSize: 1024 * 1024 * 5, // giới hạn kích thước file (5MB)
+        fileSize: 1024 * 1024 * 50, // giới hạn kích thước file (5MB)
       },
     })
   )
