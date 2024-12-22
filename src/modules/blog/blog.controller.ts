@@ -26,6 +26,6 @@ export class BlogController {
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.blogService.remove(+id);
+    return this.blogService.remove(id);
   }
 }

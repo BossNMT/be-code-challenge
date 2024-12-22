@@ -70,7 +70,7 @@ export class BlogService {
     return `This action updates a #${id} blog`;
   }
 
-  async remove(id: number) {
+  async remove(id: string) {
     const blog = await this.blogModel.findByIdAndDelete(id);
 
     if (!blog) {
