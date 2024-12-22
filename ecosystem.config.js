@@ -2,7 +2,7 @@
 module.exports = {
   apps: [
     {
-      name: 'nestjs-app',
+      name: 'be-code-challenge',
       script: 'dist/main.js',
       autorestart: true,
     },
