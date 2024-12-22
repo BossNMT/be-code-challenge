@@ -1,0 +1,49 @@
+node_env: development
+cron: true
+
+server:
+  port: 8003
+  host: 0.0.0.0
+  url: https://codechallenge.com/
+  web_url: https://codechallenge.com/
+  web_admin_url: https://codechallenge.com/
+
+swagger:
+  name: Code Challenge API
+  doc_url: /api/docs
+  description: Backend Code Challenge
+  version: 1.0
+  is_auth: false
+  username: root
+  password: 123456
+
+mongodb:
+  uri: mongodb+srv://becodechallenge:x27PIt1j6roJjLmS@cluster0.frn2u.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+redis:
+  uri: redis://root@localhost:6379/0
+  prefix: be
+
+sms:
+  hostname: https://codechallenge.com/
+  key: abcdefghijklmnop
+
+i18n:
+  fallback_language: en
+
+jwt:
+  secret: W53!ns!g&1P4
+  access_expiration_minutes: 1440
+  refresh_expiration_days: 30
+
+account_admin:
+  phone: 84399999998
+  password: Test@123
+
+account_super_admin:
+  phone: 84399999999
+  password: Test@123
+
+config_app:
+  radius: 1000
+  key_sms: 0faa8c170dd0fbae3b7977ff406e1f94-64b33eaa-32cc-4312-a73b-622fe7c85b8b
