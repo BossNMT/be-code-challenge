@@ -32,7 +32,9 @@ export class CommentService {
       blog_id: blogId,
     });
 
-    return comment;
+    return {
+      data: comment
+    };
   }
 
   async findAllCommentBlog(blogId: string, page = 1, limit = 10) {
