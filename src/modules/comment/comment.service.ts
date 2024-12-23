@@ -44,6 +44,7 @@ export class CommentService {
           .find({ blog_id: blogId })
           .skip(skip)
           .limit(limit)
+          .sort({ createdAt: -1 })
           .exec(),
         this.commentModel.countDocuments({ blog_id: blogId }).exec(),
       ]);
