@@ -79,4 +79,14 @@ export class BlogService {
 
     return blog;
   }
+
+  async findOneId(id: string) {
+    const blog = await this.blogModel.findById(id);
+
+    if (!blog) {
+      return null;
+    }
+
+    return blog;
+  }
 }

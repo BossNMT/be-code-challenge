@@ -9,6 +9,7 @@ import { BLOGS_MODEL, BlogsSchema } from './schemas/blogs.schema';
     MongooseModule.forFeature([{ name: BLOGS_MODEL, schema: BlogsSchema }]),
   ],
   controllers: [BlogController],
-  providers: [BlogService]
+  providers: [BlogService],
+  exports: [BlogService],
 })
 export class BlogModule {}

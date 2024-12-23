@@ -16,6 +16,7 @@ import { JobsModule } from "modules/_jobs/jobs.module";
 import { BlogModule } from "modules/blog/blog.module";
 import { UploadModule } from "modules/upload/upload.module";
 import { ServeStaticModule } from "@nestjs/serve-static";
+import { CommentModule } from "modules/comment/comment.module";
 
 @Module({
   imports: [
@@ -48,6 +49,7 @@ import { ServeStaticModule } from "@nestjs/serve-static";
     SeederModule,
     // TODO
     BlogModule,
+    CommentModule,
     UploadModule,
   ],
   providers: [
