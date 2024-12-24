@@ -28,7 +28,7 @@ export class CommentService {
     const comment = await this.commentModel.create({
       content: createCommentDto.content,
       user_name: "Guest",
-      user_image: "d07f2b4c2f44b25e5804e080fca9368e.jpeg",
+      user_image: "2f10774911cdbb79b5a63f81caabe5f4.jpeg",
       blog_id: blogId,
     });
 
