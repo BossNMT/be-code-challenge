@@ -17,6 +17,7 @@ import { BlogModule } from "modules/blog/blog.module";
 import { UploadModule } from "modules/upload/upload.module";
 import { ServeStaticModule } from "@nestjs/serve-static";
 import { CommentModule } from "modules/comment/comment.module";
+import { RoomModule } from "modules/room/room.module";
 
 @Module({
   imports: [
@@ -50,6 +51,7 @@ import { CommentModule } from "modules/comment/comment.module";
     // TODO
     BlogModule,
     CommentModule,
+    RoomModule,
     UploadModule,
   ],
   providers: [
