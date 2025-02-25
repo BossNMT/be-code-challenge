@@ -1,5 +1,6 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { Options } from "common/config/mongoose.config";
+import { Document } from "mongoose";
 
 export const ROOMS_MODEL = "rooms";
 
@@ -16,6 +17,9 @@ export class Rooms {
 
   @Prop({ required: true })
   url: string;
+
+  @Prop({ required: true })
+  index: number;
 }
 
 export type RoomsDocument = Rooms & Document;
